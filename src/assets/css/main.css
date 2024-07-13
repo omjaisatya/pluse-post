@@ -14,10 +14,24 @@
     padding: 16px 32px;
 }
 
+.nav {
+    background-color: #6C63FF;
+    color: #111;
+}
+
 nav a {
     margin-right: 16px;
     text-decoration: none;
-    color: #111;
+    /* color: #111; */
+    color: #000000;
+    padding-top: 5px;
+}
+
+nav img {
+    margin-left: 16px;
+    margin-right: 16px;
+    height: 40px;
+    width: 60px;
 }
 
 nav a.active {
