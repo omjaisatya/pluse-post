@@ -3,6 +3,7 @@ import { toast } from "react-toastify";
 import axios from "../utils/axiosInstance";
 import { useNavigate } from "react-router-dom";
 import { Container } from "react-bootstrap";
+import Loading from "../Icons/Loading";
 
 const Home = () => {
   const [loading, setLoading] = useState(false);
@@ -103,22 +104,24 @@ const Home = () => {
       />
 
       <div className="flexbox-container wrap">
-        {loading
-          ? "Loading..."
-          : posts.map((post) => (
-              <div
-                className="post-card card"
-                key={post._id}
-                onClick={() => navigate(`/posts/detail-post/${post._id}`)}
-              >
-                <div className="card-body">
-                  <h4 className="card-title">{post.title}</h4>
-                  <p className="card-desc card-title">
-                    {post.desc.substring(0, 50)}
-                  </p>
-                </div>
+        {loading ? (
+          <Loading />
+        ) : (
+          posts.map((post) => (
+            <div
+              className="post-card card"
+              key={post._id}
+              onClick={() => navigate(`/posts/detail-post/${post._id}`)}
+            >
+              <div className="card-body">
+                <h4 className="card-title">{post.title}</h4>
+                <p className="card-desc card-title">
+                  {post.desc.substring(0, 50)}
+                </p>
               </div>
-            ))}
+            </div>
+          ))
+        )}
       </div>
 
       {pageCount.length > 0 && (

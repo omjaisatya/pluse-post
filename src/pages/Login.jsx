@@ -3,6 +3,7 @@ import { toast } from "react-toastify";
 import axios from "../utils/axiosInstance";
 import loginValidator from "../validators/loginValidator";
 import { useNavigate, Link } from "react-router-dom";
+import login from "../assets/images/login.svg";
 
 const initialFormData = {
   email: "",
@@ -67,6 +68,7 @@ const Login = () => {
 
   return (
     <div className="form-container">
+      <img className="form-img" src={login} alt="login" />
       <form className="inner-container" onSubmit={handleSubmit}>
         <h2 className="form-title">Login Form</h2>
 

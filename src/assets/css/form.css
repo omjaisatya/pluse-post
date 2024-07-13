@@ -7,6 +7,15 @@
     background-color: #eee;
     justify-content: center;
     border-radius: 10px;
+    padding: 40px;
+    align-items: center;
+}
+
+.form-img {
+    padding-right: 20px;
+    height: 200px;
+    width: 250px;
+    align-items: center;
 }
 
 .inner-container {

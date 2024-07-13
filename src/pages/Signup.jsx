@@ -3,6 +3,8 @@ import { toast } from "react-toastify";
 import axios from "../utils/axiosInstance";
 import { useNavigate } from "react-router-dom";
 import signupValidator from "../validators/signupValidator";
+import signup from "../assets/images/signup.svg";
+import { Link } from "react-router-dom";
 
 const initialFormData = {
   name: "",
@@ -81,6 +83,14 @@ const Signup = () => {
 
   return (
     <div className="form-container">
+      <div style={{ position: "relative" }}>
+        <img className="form-img" src={signup} alt="login" />
+        <p style={{ position: "static", paddingTop: 30 }}>
+          <Link to="/login" style={{ textDecoration: "none" }}>
+            Already have an Account?
+          </Link>
+        </p>
+      </div>
       <form className="inner-container" onSubmit={handleSubmit}>
         <h2 className="form-title">Signup Form</h2>
         <div className="form-group">
