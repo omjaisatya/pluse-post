@@ -57,4 +57,5 @@ Click the image above to watch the demo video.
 
 ## Screenshots
 
-![App Screenshot](https://repo/path.png)
+![App Screenshot](https://github.com/omjaisatya/pluse-post/blob/main/src/assets/images/demo/pluse-category.png) 
+[login](https://github.com/omjaisatya/pluse-post/blob/main/src/assets/images/demo/pulse-login.png)
