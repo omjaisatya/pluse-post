@@ -9,7 +9,7 @@ PlusePost is a blogging application built with the MERN stack (MongoDB, Express,
 Install my-project with npm
 
 ```bash
-    git clone https://github.com/omjaisatya/plusepost.git
+    git clone https://github.com/omjaisatya/pluse-post.git
     cd plus-post
     npm install
 ```
