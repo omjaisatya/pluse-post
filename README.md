@@ -58,12 +58,6 @@ Install my-project with npm
 
 Click the image above to watch the demo video.
 
-<div>
-<video width="320" height="240" autoplay>
-  <source src="https://youtube.com/shorts/mLUIoskIYq0" type="video/mp4">
-Your browser does not support the video tag.
-</video>
-</div>
 
 ## Screenshots
 
