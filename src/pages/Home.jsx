@@ -113,7 +113,7 @@ const Home = () => {
               key={post._id}
               onClick={() => navigate(`/posts/detail-post/${post._id}`)}
             >
-              <div className="card-body">
+              <div className="card-body form-bg">
                 <h4 className="card-title">{post.title}</h4>
                 <p className="card-desc card-title">
                   {post.desc.substring(0, 50)}
@@ -125,7 +125,7 @@ const Home = () => {
       </div>
 
       {pageCount.length > 0 && (
-        <div className="pag-container">
+        <div className="pag-container pg-center">
           <button
             className="pag-button"
             onClick={handlePrev}

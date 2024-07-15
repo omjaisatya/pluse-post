@@ -83,12 +83,12 @@ const VerifyUser = () => {
   };
 
   return (
-    <Container>
+    <Container className="container">
       <button className="button button-block" onClick={() => navigate(-1)}>
         <icons.Back className="m-1" />
       </button>
 
-      <div className="form-container">
+      <div className="form-container container form-bg">
         <form className="inner-container" onSubmit={handleSubmit}>
           <h2 className="form-title">Verify User</h2>
           <div className="form-group">
@@ -97,7 +97,7 @@ const VerifyUser = () => {
               className="form-control"
               type="text"
               name="code"
-              placeholder="789654"
+              placeholder="*****"
               value={code}
               onChange={(e) => setCode(e.target.value)}
             />

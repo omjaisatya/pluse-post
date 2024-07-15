@@ -4,7 +4,7 @@ import axios from "../../utils/axiosInstance";
 import { useNavigate, useParams } from "react-router-dom";
 import addPostValidator from "../../validators/addPostValidator";
 import { Container } from "react-bootstrap";
-import { MdArrowBack, MdBackspace, MdUpdate } from "react-icons/md";
+import { icons } from "../../Icons/Icons";
 
 const initialFormData = {
   title: "",
@@ -163,7 +163,7 @@ const UpdatePost = () => {
   return (
     <Container>
       <button className="button button-block" onClick={() => navigate(-1)}>
-        <MdArrowBack className="m-1" />
+        <icons.Back className="m-1" />
       </button>
       <Container className="form-container">
         <form className="inner-container" onSubmit={handleSubmit}>

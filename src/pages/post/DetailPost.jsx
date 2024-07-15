@@ -4,11 +4,11 @@ import axios from "../../utils/axiosInstance";
 import { toast } from "react-toastify";
 import moment from "moment";
 import { Modal, Button, Container } from "react-bootstrap";
-import { MdUpdate } from "react-icons/md";
-import { IoArrowBack } from "react-icons/io5";
 import { icons } from "../../Icons/Icons";
+import Loading from "../../Icons/Loading";
 
 const DetailPost = () => {
+  const [loading, setLoading] = useState(false);
   const [post, setPost] = useState(null);
   const [fileUrl, setFileUrl] = useState(null);
   const [showModal, setShowModal] = useState(false);
@@ -21,12 +21,15 @@ const DetailPost = () => {
     if (postId) {
       const getPost = async () => {
         try {
+          setLoading(true);
           // api request
           const response = await axios.get(`/posts/${postId}`);
           const data = response.data.data;
 
           setPost(data.post);
+          setLoading(false);
         } catch (error) {
+          setLoading(false);
           const response = error.response;
           const data = response.data;
           toast.error(data.message, {
@@ -92,7 +95,7 @@ const DetailPost = () => {
   return (
     <Container>
       <button className="button button-block" onClick={() => navigate(-1)}>
-        <IoArrowBack className="m-1" />
+        <icons.Back className="m-1" />
       </button>
 
       <Container className="detail-container">
@@ -106,12 +109,21 @@ const DetailPost = () => {
           Created at: {moment(post?.createdAt).format("YYYY-MM-DD HH:mm:ss")}
         </h6>
         <h6 className="post-category">
-          <MdUpdate className="m-1" />
+          <icons.UpdateHistory className="m-1" />
           Updated at: {moment(post?.updatedAt).format("YYYY-MM-DD HH:mm:ss")}
         </h6>
-        <p className="post-desc p-3">{post?.desc}</p>
+        {loading ? (
+          <Loading />
+        ) : (
+          <p
+            className="post-desc p-3 border rounded"
+            style={{ backgroundColor: "#EBF4F6" }}
+          >
+            {post?.desc}
+          </p>
+        )}
 
-        <img src={fileUrl} alt="file-not-found" />
+        <img src={fileUrl} alt="file-not-found" height={100} width={200} />
 
         <Container style={{ display: "flex" }}>
           <button

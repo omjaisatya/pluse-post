@@ -21,7 +21,7 @@ const PrivateNavbar = () => {
     <Navbar className="nav">
       <Nav className="text-center align-center">
         <NavLink to="/">
-          <img src={logo} alt="logo" style={{ height: 30, width: 30 }} />
+          <img src={logo} alt="logo" />
         </NavLink>
         {(auth.role === 1 || auth.role === 2) && (
           <NavLink to="/categories">Categories</NavLink>

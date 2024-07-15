@@ -5,6 +5,7 @@ import moment from "moment/moment";
 import { useNavigate } from "react-router-dom";
 import { Modal, Button, Container } from "react-bootstrap";
 import { icons } from "../../Icons/Icons";
+import Loading from "../../Icons/Loading";
 
 const CategoryList = () => {
   const [loading, setLoading] = useState(false);
@@ -142,86 +143,92 @@ const CategoryList = () => {
         onChange={handleSearch}
       />
       {loading ? (
-        "Loading..."
+        <Loading />
       ) : (
-        <table className="table table-success table-striped-columns">
-          <thead>
-            <tr>
-              <th scope="col">Title</th>
-              <th scope="col">Description</th>
-              <th scope="col">
-                {" "}
-                <icons.Create className="m-1" /> Created At
-              </th>
-              <th scope="col">
-                {" "}
-                <icons.UpdateHistory className="m-1" /> Updated At
-              </th>
-              <th scope="col">Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            {categories.map((category) => (
-              <tr key={category._id}>
-                <td>{category.title}</td>
-                <td>{category.desc}</td>
-                <td>
-                  {moment(category.createdAt).format("YYYY-MM-DD HH:mm:ss")}
-                </td>
-                <td>
-                  {moment(category.updatedAt).format("YYYY-MM-DD HH:mm:ss")}
-                </td>
-                <th>
-                  <button
-                    className="button"
-                    onClick={() => navigate(`update-category/${category._id}`)}
-                  >
-                    <icons.UpdateBtn className="text-success" />
-                  </button>
-                  <button
-                    className="button"
-                    onClick={() => {
-                      setShowModal(true);
-                      setCategoryId(category._id);
-                    }}
-                  >
-                    <icons.Delete className="text-danger" />
-                  </button>
+        <div className="table-responsive">
+          <table className="table table-secondary table-striped-columns table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Title</th>
+                <th scope="col">Description</th>
+                <th scope="col">
+                  {" "}
+                  <icons.Create className="m-1" /> Created At
                 </th>
+                <th scope="col">
+                  {" "}
+                  <icons.UpdateHistory className="m-1" /> Updated At
+                </th>
+                <th scope="col">Action</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {categories.map((category) => (
+                <tr key={category._id}>
+                  <td>{category.title}</td>
+                  <td>{category.desc}</td>
+                  <td>
+                    {moment(category.createdAt).format("YYYY-MM-DD HH:mm:ss")}
+                  </td>
+                  <td>
+                    {moment(category.updatedAt).format("YYYY-MM-DD HH:mm:ss")}
+                  </td>
+                  <th>
+                    <button
+                      className="button"
+                      onClick={() =>
+                        navigate(`update-category/${category._id}`)
+                      }
+                    >
+                      <icons.UpdateBtn className="text-success" />
+                    </button>
+                    <button
+                      className="button"
+                      onClick={() => {
+                        setShowModal(true);
+                        setCategoryId(category._id);
+                      }}
+                    >
+                      <icons.Delete className="text-danger" />
+                    </button>
+                  </th>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       )}
 
       {pageCount.length > 0 && (
-        <div className="pag-container">
-          <button
-            className="pag-button"
-            onClick={handlePrev}
-            disabled={currentPage === 1}
-          >
-            prev
-          </button>
-          {pageCount.map((pageNumber, index) => (
+        <div>
+          <div className="pag-container pg-center">
             <button
               className="pag-button"
-              key={index}
-              onClick={() => handlePage(pageNumber)}
-              style={{
-                backgroundColor: currentPage === pageNumber ? "#ccc" : "",
-              }}
+              onClick={handlePrev}
+              disabled={currentPage === 1}
             >
-              {pageNumber}
+              prev
             </button>
-          ))}
-          <button
-            className="pag-button"
-            onClick={handleNext}
-            disabled={currentPage === totalPage}
-          >
-            next
-          </button>
+            {pageCount.map((pageNumber, index) => (
+              <button
+                className="pag-button"
+                key={index}
+                onClick={() => handlePage(pageNumber)}
+                style={{
+                  backgroundColor: currentPage === pageNumber ? "#ccc" : "",
+                }}
+              >
+                {pageNumber}
+              </button>
+            ))}
+            <button
+              className="pag-button"
+              onClick={handleNext}
+              disabled={currentPage === totalPage}
+            >
+              next
+            </button>
+          </div>
         </div>
       )}
 

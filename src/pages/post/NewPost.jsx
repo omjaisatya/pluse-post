@@ -3,6 +3,7 @@ import { toast } from "react-toastify";
 import axios from "../../utils/axiosInstance";
 import { useNavigate } from "react-router-dom";
 import addPostValidator from "../../validators/addPostValidator";
+import { icons } from "../../Icons/Icons";
 
 const initialFormData = {
   title: "",
@@ -129,11 +130,11 @@ const NewPost = () => {
   };
 
   return (
-    <div>
+    <div className="container">
       <button className="button button-block" onClick={() => navigate(-1)}>
-        Go Back
+        <icons.Back className="m-1" />
       </button>
-      <div className="form-container">
+      <div className="form-container container form-bg">
         <form className="inner-container" onSubmit={handleSubmit}>
           <h2 className="form-title">New Post</h2>
           <div className="form-group">

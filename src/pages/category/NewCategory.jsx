@@ -4,6 +4,7 @@ import axios from "../../utils/axiosInstance";
 import { useNavigate } from "react-router-dom";
 import addCategoryValidator from "../../validators/addCategoryValidator";
 import { Container } from "react-bootstrap";
+import { icons } from "../../Icons/Icons";
 
 const initialFormData = {
   title: "",
@@ -65,7 +66,7 @@ const NewCategory = () => {
         className="button button-block btn border btn-light"
         onClick={() => navigate(-1)}
       >
-        Go Back
+        <icons.Back className="m-1" />
       </button>
       <Container className="form-container">
         <form className="inner-container" onSubmit={handleSubmit}>

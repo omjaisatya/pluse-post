@@ -10,7 +10,6 @@ import PostList from "./pages/post/PostList";
 import Profile from "./pages/Profile";
 import Setting from "./pages/Setting";
 import PublicLayout from "./components/layout/PublicLayout";
-import Signup from "./pages/Signup";
 import NewCategory from "./pages/category/NewCategory";
 import UpdateCategory from "./pages/category/UpdateCategory";
 import NewPost from "./pages/post/NewPost";
@@ -19,6 +18,7 @@ import UpdatePost from "./pages/post/UpdatePost";
 import VerifyUser from "./pages/VerifyUser";
 import ForgotPassword from "./pages/ForgotPassword";
 import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 
 function App() {
   return (

@@ -72,7 +72,7 @@ const Setting = () => {
         <icons.Back className="m-1" />
       </button>
 
-      <div className="form-container">
+      <div className="form-container container form-bg">
         <form className="inner-container" onSubmit={handleSubmit}>
           <h2 className="form-title">Change Password</h2>
           <div className="form-group">

@@ -4,6 +4,7 @@ import axios from "../../utils/axiosInstance";
 import { useNavigate } from "react-router-dom";
 import { Container, Card } from "react-bootstrap";
 import { icons } from "../../Icons/Icons";
+import Loading from "../../Icons/Loading";
 
 const PostList = () => {
   const [loading, setLoading] = useState(false);
@@ -110,26 +111,28 @@ const PostList = () => {
       />
 
       <Container className="flexbox-container wrap">
-        {loading
-          ? "Loading..."
-          : posts.map((post) => (
-              <Card
-                className="post-card card"
-                key={post._id}
-                onClick={() => navigate(`detail-post/${post._id}`)}
-              >
-                <Card.Body className="card-body">
-                  <Card.Title className="card-title">{post.title}</Card.Title>
-                  <Card.Text className="card-desc card-text">
-                    {post.desc.substring(0, 50)}
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            ))}
+        {loading ? (
+          <Loading />
+        ) : (
+          posts.map((post) => (
+            <Card
+              className="post-card card"
+              key={post._id}
+              onClick={() => navigate(`detail-post/${post._id}`)}
+            >
+              <Card.Body className="card-body form-bg">
+                <Card.Title className="card-title">{post.title}</Card.Title>
+                <Card.Text className="card-desc card-text">
+                  {post.desc.substring(0, 50)}
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          ))
+        )}
       </Container>
 
       {pageCount.length > 0 && (
-        <Container className="pag-container">
+        <Container className="pag-container pg-center">
           <button
             className="pag-button"
             onClick={handlePrev}
