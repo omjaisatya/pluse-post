@@ -1,7 +1,8 @@
 import axios from "axios";
 
+const API = import.meta.env.VITE_POST_API;
 const axiosInstance = axios.create({
-  baseURL: "https://pluse-post-api.onrender.com/api/v1",
+  baseURL: API,
 });
 
 axiosInstance.interceptors.request.use((req) => {
