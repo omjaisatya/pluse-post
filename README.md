@@ -1,6 +1,6 @@
 # Pulse Post
 
-![Logo](https://github.com/omjaisatya/pluse-post/blob/main/public/favicon.jpg)
+![Logo](https://github.com/omjaisatya/pluse-post/blob/main/public/favicon.jpg){ width=300 }
 
 PlusePost is a blogging application built with the MERN stack (MongoDB, Express, React, Node.js). This application allows users to create, read, update, and delete blog posts. It includes features like user authentication and a rich text editor for creating posts.
 
