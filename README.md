@@ -58,18 +58,20 @@ Install my-project with npm
 
 Click the image above to watch the demo video.
 
+<div>
 <video width="320" height="240" autoplay>
   <source src="https://youtube.com/shorts/mLUIoskIYq0" type="video/mp4">
 Your browser does not support the video tag.
 </video>
+</div>
 
 ## Screenshots
 
 
 <div style="text-align: center;">
-  <img src="https://github.com/omjaisatya/pluse-post/blob/main/src/assets/images/demo/pluse-category.png" alt="category" width="300" height="240">
+  <img src="https://github.com/omjaisatya/pluse-post/blob/main/src/assets/images/demo/pluse-category.png" alt="category" width="300">
 </div>
 
 <div style="text-align: center;">
-  <img src="https://github.com/omjaisatya/pluse-post/blob/main/src/assets/images/demo/pulse-login.png" alt="category" width="300" height="240">
+  <img src="https://github.com/omjaisatya/pluse-post/blob/main/src/assets/images/demo/pulse-login.png" alt="category" width="300">
 </div>
