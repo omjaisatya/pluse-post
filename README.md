@@ -1,7 +1,7 @@
 # Pulse Post
 
 
-<div style="text-align: center; justify-content: center">
+<div style="text-align: center;">
   <img src="https://github.com/omjaisatya/pluse-post/blob/main/public/favicon.jpg" alt="LOGO" width="300">
 </div>
 
@@ -60,5 +60,11 @@ Click the image above to watch the demo video.
 
 ## Screenshots
 
-![App Screenshot](https://github.com/omjaisatya/pluse-post/blob/main/src/assets/images/demo/pluse-category.png) 
-[login](https://github.com/omjaisatya/pluse-post/blob/main/src/assets/images/demo/pulse-login.png)
+
+<div style="text-align: center;">
+  <img src="https://github.com/omjaisatya/pluse-post/blob/main/src/assets/images/demo/pluse-category.png" alt="category" width="300">
+</div>
+
+<div style="text-align: center;">
+  <img src="https://github.com/omjaisatya/pluse-post/blob/main/src/assets/images/demo/pulse-login.png" alt="category" width="300">
+</div>
