@@ -2,7 +2,7 @@
 
 
 <div style="text-align: center;">
-  <img src="https://github.com/omjaisatya/pluse-post/blob/main/public/favicon.jpg" alt="LOGO" width="300">
+  <img src="https://github.com/omjaisatya/pluse-post/blob/main/public/favicon.jpg" alt="LOGO" width="300" height="240">
 </div>
 
 PlusePost is a blogging application built with the MERN stack (MongoDB, Express, React, Node.js). This application allows users to create, read, update, and delete blog posts. It includes features like user authentication and a rich text editor for creating posts.
@@ -58,13 +58,18 @@ Install my-project with npm
 
 Click the image above to watch the demo video.
 
+<video width="320" height="240" autoplay>
+  <source src="https://youtube.com/shorts/mLUIoskIYq0" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
 ## Screenshots
 
 
 <div style="text-align: center;">
-  <img src="https://github.com/omjaisatya/pluse-post/blob/main/src/assets/images/demo/pluse-category.png" alt="category" width="300">
+  <img src="https://github.com/omjaisatya/pluse-post/blob/main/src/assets/images/demo/pluse-category.png" alt="category" width="300" height="240">
 </div>
 
 <div style="text-align: center;">
-  <img src="https://github.com/omjaisatya/pluse-post/blob/main/src/assets/images/demo/pulse-login.png" alt="category" width="300">
+  <img src="https://github.com/omjaisatya/pluse-post/blob/main/src/assets/images/demo/pulse-login.png" alt="category" width="300" height="240">
 </div>
