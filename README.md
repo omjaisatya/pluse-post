@@ -1,7 +1,7 @@
 # Pulse Post
 
 
-<div style="text-align: center; align-items: center">
+<div style="text-align: center; justify-content: center">
   <img src="https://github.com/omjaisatya/pluse-post/blob/main/public/favicon.jpg" alt="LOGO" width="300">
 </div>
 
