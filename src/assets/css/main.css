@@ -6,7 +6,9 @@
     padding: 0;
     /* background-color: #D6EFD8; */
     font-family: "Nunito Sans", sans-serif;
+
 }
+
 
 
 .primary-link {
@@ -22,7 +24,7 @@
 nav a {
     margin-right: 16px;
     text-decoration: none;
-    /* color: #111; */
+
     color: #000000;
     padding-top: 5px;
 }
@@ -37,7 +39,7 @@ nav img {
 nav a.active {
     text-decoration: underline;
     font-weight: bold;
-    color: #1A5319;
+    color: #ffffff;
 
 }
 
