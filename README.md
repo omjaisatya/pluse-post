@@ -15,6 +15,8 @@ This is a work in progress and is not yet ready for production use.
 - [ ] Project logo typo text finds.
 - [ ] When user login or signin it's take some time because i'm using free web server.
 
+### Contributors are also welcome
+
 ## Installation
 
 Install my-project with npm
@@ -28,7 +30,7 @@ Install my-project with npm
 ## Usage / Run Server
 
 ```
-    npm start
+    npm run dev
 ```
 
 ## Features
@@ -52,7 +54,7 @@ Install my-project with npm
 
 **Client:** React, Redux, bootstrap
 
-**Server** Refer to My Github Repo.
+**Server** Refer to My Github Repo. <a href="https://github.com/omjaisatya/pluse-post-api.git">see here</a>
 
 - I have used **react.js** to handle client side UI
 - Used **axios**. It is a promised-based HTTP client for JavaScript.
