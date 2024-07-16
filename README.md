@@ -6,6 +6,15 @@
 
 PlusePost is a blogging application built with the MERN stack (MongoDB, Express, React, Node.js). This application allows users to create, read, update, and delete blog posts. It includes features like user authentication and a rich text editor for creating posts.
 
+## ATTENTION
+
+This is a work in progress and is not yet ready for production use.
+
+### BUGS
+
+- [ ] Project logo typo text finds.
+- [ ] When user login or signin it's take some time because i'm using free web server.
+
 ## Installation
 
 Install my-project with npm
