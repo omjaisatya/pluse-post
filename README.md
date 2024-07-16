@@ -6,15 +6,6 @@
 
 PlusePost is a blogging application built with the MERN stack (MongoDB, Express, React, Node.js). This application allows users to create, read, update, and delete blog posts. It includes features like user authentication and a rich text editor for creating posts.
 
-## ATTENTION
-
-This project is still in development and is not yet ready for production use.
-
-### BUGS
-
-- [ ] Logo text typo finds.
-- [ ] When user login or signin, its take some time because i'm using free server. Be patient when you are login.
-
 ## Installation
 
 Install my-project with npm
@@ -52,7 +43,7 @@ Install my-project with npm
 
 **Client:** React, Redux, bootstrap
 
-**Server** Refer to My Github Repo. <a href="https://github.com/omjaisatya/pluse-post-api.git">Click here</a>
+**Server** Refer to My Github Repo.
 
 - I have used **react.js** to handle client side UI
 - Used **axios**. It is a promised-based HTTP client for JavaScript.
