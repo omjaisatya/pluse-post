@@ -12,7 +12,7 @@ This is a work in progress and is not yet ready for production use.
 
 ### BUGS
 
-- [ ] Project logo typo text finds.
+- [x] Project logo typo text finds. (fixed)
 - [ ] When user login or signin it's take some time because i'm using free web server.
 
 ### Contributors are also welcome
@@ -40,14 +40,6 @@ Install my-project with npm
 - Search and filter blogs with pagination
 - Sending email
 - Flexible and easy-to-use API endpoints
-- Scalable and well-documented codebase
-
-## Features
-
-- Authentication and Authorization
-- Add, Update, and Delete blog posts
-- Search and filter blogs with pagination
-- Sending email
 - Scalable and well-documented codebase
 
 ## Tech Stack
