@@ -1,6 +1,7 @@
 import { Nav, Navbar } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
-import logo from "../assets/images/logo.png";
+// import logo from "../assets/images/logo.png";
+import logo from "../assets/images/logo1.png";
 
 const PublicNavbar = () => {
   return (

@@ -35,10 +35,10 @@ nav a:hover {
 }
 
 nav img {
-    margin-left: 16px;
+    margin-left: 10px;
     margin-right: 16px;
     height: 30px;
-    width: 30px;
+    width: 45px;
 }
 
 nav a.active {

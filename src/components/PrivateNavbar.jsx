@@ -3,7 +3,8 @@ import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "./context/AuthContext";
 import { Nav, Navbar } from "react-bootstrap";
-import logo from "../assets/images/logo.png";
+// import logo from "../assets/images/logo.png";
+import logo from "../assets/images/logo1.png";
 
 const PrivateNavbar = () => {
   const navigate = useNavigate();
@@ -21,7 +22,7 @@ const PrivateNavbar = () => {
     <Navbar className="nav">
       <Nav className="text-center align-center">
         <NavLink to="/">
-          <img src={logo} alt="logo" />
+          <img src={logo} alt="logo" className="img-fluid" />
         </NavLink>
         {(auth.role === 1 || auth.role === 2) && (
           <NavLink to="/categories">Categories</NavLink>
