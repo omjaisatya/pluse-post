@@ -103,7 +103,7 @@ const ForgotPassword = () => {
   };
 
   return (
-    <div className="form-container">
+    <div className="form-container container">
       <form
         className="inner-container"
         onSubmit={!hasEmail ? handleSendCode : handleRecoverPassword}
