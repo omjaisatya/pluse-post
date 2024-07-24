@@ -1,9 +1,0 @@
-Developed a full-stack blogging application using React for the frontend and Node.js with Express for the backend. Implemented user authentication, CRUD operations for blog posts, rich text editing, and commenting features. Ensured responsiveness across devices and utilized JWT for secure authentication. Deployed on AWS for scalability.
-Key Technologies Used:
-
-Frontend: React.js, React Router, Redux (or Context API)
-Backend: Node.js, Express.js, MongoDB
-Authentication: JWT (JSON Web Tokens)
-Deployment: AWS (Amazon Web Services)
-
-Project Link: [Link to GitHub repository or deployed application]
